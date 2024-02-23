@@ -1,0 +1,15 @@
+*.log
+__pycache__
+.bak
+.idea/**/contentModel.xml
+*.py[cod]
+*$py.class
+.mypy_cache/
+.vscode/*
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+.history/
