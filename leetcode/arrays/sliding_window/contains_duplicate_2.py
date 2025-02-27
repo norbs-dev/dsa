@@ -26,29 +26,12 @@ Constraints:
 
 l = [1,0,1,1]
 
-'''class Solution(object):
-    def containsNearbyDuplicate(self, nums):
-        """
-        :type nums: List[int]
-        :type k: int
-        :rtype: bool
-        """
-        new_list = {}
-        i = 0
-        prev_index = 0
-        for index, n in enumerate(nums):
-            if index > 0:
-                prev_index = index - 1
-            print(nums[index], nums[prev_index])'''
 
 class Solution:
     def containsNearbyDuplicate(self, nums, k: int) -> bool:
-        
         d = {}
-
         for idx, x in enumerate(nums):
             if x in d and abs(idx - d[x] ) <= k:
-                    #print(x, nums[idx], idx)
                     return True
             else:
                 d[x] = idx
